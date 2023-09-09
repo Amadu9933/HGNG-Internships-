@@ -1,0 +1,101 @@
+body,
+h1,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d5c8ab;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  color: rgba(186, 56, 56, 0.934);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: 5px solid rgba(186, 56, 56, 0.934);
+  background-color: whitesmoke;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 10%;
+}
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  height: 350px;
+  width: 400px;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Style for the GitHub link */
+[data-testid="githubURL"] {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(186, 56, 56, 0.934);
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+[data-testid="githubURL"]:hover {
+  background-color: rgba(176, 108, 108, 0.934);
+}
+
+/* Style for the current day and UTC time */
+[data-testid="currentDayOfTheWeek"],
+[data-testid="currentUTCTime"] {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the track */
+[data-testid="myTrack"] {
+  font-style: italic;
+  color: #777;
+}
